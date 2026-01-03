@@ -1,0 +1,17 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.log
+
+# Terraform lock file (optional – comment out if you want to commit it)
+.terraform.lock.hcl
+
+# Generated files
+graph.png
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
