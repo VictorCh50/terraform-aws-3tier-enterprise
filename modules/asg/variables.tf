@@ -1,7 +1,3 @@
-variable "ami" {
-  description = "AMI ID for EC2 instances"
-  type        = string
-}
 
 variable "instance_type" {
   description = "EC2 instance type"
@@ -36,4 +32,9 @@ variable "desired" {
 variable "user_data" {
   description = "User data script"
   type        = string
+}
+
+variable "target_group_arns" {
+  type = list(string)
+  description = "Target groups to attach ASG instances to" 
 }
