@@ -23,25 +23,28 @@ The design separates **networking, security, compute, load balancing, and databa
   - Restricted Security Groups
 
 ---
+## 📁 Project Structure
 
-## 📂 Project Structure
+```text
 terraform-aws-3tier-enterprise/
 ├── dev/
-│ ├── main.tf
-│ ├── provider.tf
-│ ├── variables.tf
-│ ├── outputs.tf
-│ ├── backend.tf
-│ └── terraform.tfvars.example
+│   ├── main.tf
+│   ├── provider.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   ├── backend.tf
+│   └── terraform.tfvars.example
 │
 ├── modules/
-│ ├── network/
-│ ├── security/
-│ ├── alb/
-│ ├── asg/
-│ └── database/
+│   ├── network/
+│   ├── security/
+│   ├── alb/
+│   ├── asg/
+│   └── database/
 │
 └── README.md
+
+
 
 ---
 
@@ -60,4 +63,5 @@ terraform validate
 terraform plan
 terraform apply
 terraform destroy
+
 
