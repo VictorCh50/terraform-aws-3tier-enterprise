@@ -1,8 +1,9 @@
 
 <img width="512" height="512" alt="HashiCorp Terraform" src="https://github.com/user-attachments/assets/3db47467-c588-4835-81e4-6e595177b4c9" />
-🏗️ Terraform AWS 3-Tier Enterprise Architecture
-📌 Overview
 
+🏗️ Terraform AWS 3-Tier Enterprise Architecture
+
+📌 Overview
 This project demonstrates the end-to-end design and implementation of a production-grade, highly available AWS 3-tier architecture using Terraform (Infrastructure as Code).
 The goal of this project is not just to provision resources, but to model real enterprise cloud infrastructure with strong emphasis on:
 - Architecture design
@@ -10,7 +11,7 @@ The goal of this project is not just to provision resources, but to model real e
 - High availability across Availability Zones
 - Modularity and reusability
 - Operational best practices
-- 
+  
 This repository reflects how cloud infrastructure is designed, documented, deployed, and managed in real-world enterprise environments.
 🧠 Architecture-First Design
 
@@ -59,6 +60,7 @@ terraform-aws-3tier-enterprise/
 - Internet Gateway for inbound public traffic
 - NAT Gateway for secure outbound access from private subnets
 - Route tables enforcing traffic boundaries
+
 
 
 
