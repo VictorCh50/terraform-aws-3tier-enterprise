@@ -25,3 +25,39 @@ The design separates **networking, security, compute, load balancing, and databa
 ---
 
 ## 📂 Project Structure
+terraform-aws-3tier-enterprise/
+├── dev/
+│ ├── main.tf
+│ ├── provider.tf
+│ ├── variables.tf
+│ ├── outputs.tf
+│ ├── backend.tf
+│ └── terraform.tfvars.example
+│
+├── modules/
+│ ├── network/
+│ ├── security/
+│ ├── alb/
+│ ├── asg/
+│ └── database/
+│
+└── README.md
+
+---
+
+## 🔐 Security Best Practices
+- Private subnets for App & DB tiers
+- Security Group chaining (ALB → Web → App → DB)
+- No hardcoded secrets
+- Remote Terraform state (S3 backend)
+
+---
+
+## 🚀 How to Deploy
+```bash
+terraform init
+terraform validate
+terraform plan
+terraform apply
+terraform destroy
+
