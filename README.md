@@ -16,6 +16,32 @@ The infrastructure follows industry best practices by separating concerns into n
  - Enable repeatable, environment-agnostic deployments with clean teardown (terraform destroy)
  - Demonstrate real-world DevOps and cloud engineering skills beyond tutorials
 
+## 📂 Repository Structure
+
+```text
+terraform-aws-3tier-enterprise/
+├── dev/                             
+│   ├── main.tf               
+│   ├── provider.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   ├── backend.tf
+│   └── terraform.tfvars.example
+│
+├── modules/
+│   ├── network/
+│   ├── security/
+│   ├── alb/
+│   ├── asg/
+│   └── database/
+│
+├── docs/
+│   └── architecture/
+│       └── aws-3tier-architecture.png
+│
+└── README.md
+
+
 
 
 
