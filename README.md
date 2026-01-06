@@ -54,11 +54,14 @@ terraform-aws-3tier-enterprise/
   - No hardcoded secrets in Terraform code
   - Remote Terraform state with locking & encryption
 
-⚠️ Challenges & Lessons Learned (Summary)
-   - AWS Free Tier changes caused Auto Scaling failures: t2.micro and t3.micro were no longer eligible or restricted, requiring a shift to t4g.micro (Graviton).
-   - Terraform state drift occurred when Terraform reported “No changes” despite code updates, due to remote state misalignment and missing reinitialization.
-   - ALB HTTP 503 errors were encountered when targets were unhealthy, highlighting the importance of correct security group chaining, health checks, and instance readiness.
-Key lesson: Production cloud environments demand continuous adaptation—understanding provider policies, Terraform state management, and load balancer health is critical for reliable deployments.
+ ## 🚀 Commands during Deployment
+  - terraform init      --  Initializes the Terraform working directory.
+  - terraform validate  --  Checks whether the Terraform configuration is syntactically valid.
+  - terraform plan      --  Shows what Terraform will change before making any real changes.
+  - terraform apply     --  Applies the planned changes to the infrastructure.
+
+
+
 
 
 
