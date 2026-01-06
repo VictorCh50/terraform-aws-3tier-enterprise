@@ -26,7 +26,7 @@ terraform-aws-3tier-enterprise/
 │   ├── variables.tf
 │   ├── outputs.tf
 │   ├── backend.tf
-│   └── terraform.tfvars.example
+│   └── terraform.tfvars
 │
 ├── modules/
 │   ├── network/
@@ -122,6 +122,7 @@ Application Load Balancer returned **503 Service Temporarily Unavailable**.
 
 ✅ **Lesson:**  
 Load balancers are only as healthy as their targets — observability, health checks, and validation are non-negotiable in production systems.
+
 
 
 
