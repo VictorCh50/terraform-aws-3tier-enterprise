@@ -47,11 +47,19 @@ terraform-aws-3tier-enterprise/
 └── README.md
 
 ```
+🔐 Security Best Practices
+  - Private subnets for App & Database tiers
+  - No public access to EC2 or database instances
+  - Security Group chaining for controlled traffic flow
+  - No hardcoded secrets in Terraform code
+  - Remote Terraform state with locking & encryption
+
 ⚠️ Challenges & Lessons Learned (Summary)
    - AWS Free Tier changes caused Auto Scaling failures: t2.micro and t3.micro were no longer eligible or restricted, requiring a shift to t4g.micro (Graviton).
    - Terraform state drift occurred when Terraform reported “No changes” despite code updates, due to remote state misalignment and missing reinitialization.
    - ALB HTTP 503 errors were encountered when targets were unhealthy, highlighting the importance of correct security group chaining, health checks, and instance readiness.
 Key lesson: Production cloud environments demand continuous adaptation—understanding provider policies, Terraform state management, and load balancer health is critical for reliable deployments.
+
 
 
 
