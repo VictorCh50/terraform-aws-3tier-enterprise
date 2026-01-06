@@ -59,6 +59,8 @@ terraform-aws-3tier-enterprise/
   - terraform validate  --  Checks whether the Terraform configuration is syntactically valid.
   - terraform plan      --  Shows what Terraform will change before making any real changes.
   - terraform apply     --  Applies the planned changes to the infrastructure.
+    
+  Terraform follows a predictable workflow: initialize the environment, validate configurations, review planned changes, and then apply them safely to create or update infrastructure
 
 
 
